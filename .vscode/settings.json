@@ -4,6 +4,7 @@
   "java.project.referencedLibraries": [
     "lib/**/*.jar"
   ],
+	"java.autobuild.enabled": false,
   "sqltools.connections": [
     {
       "mysqlOptions": {
