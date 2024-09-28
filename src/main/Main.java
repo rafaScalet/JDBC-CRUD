@@ -26,6 +26,8 @@ public class Main {
 					UpdateMenu.show();
 					break;
 				case 5:
+					DeleteMenu.show();
+					break;
 				default:
 					System.out.println("\nEnter a valid option");
 					break;
