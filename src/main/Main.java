@@ -1,10 +1,7 @@
 package main;
 
 import java.util.Scanner;
-import menu.SaveMenu;
-import menu.UpdateMenu;
-import menu.ListMenu;
-import menu.ProductMenu;
+import menu.*;
 
 public class Main {
 	public static void main(String[] args) {
