@@ -35,7 +35,7 @@ para ver a explicação de cada parâmetro [clique aqui](/docs/ComandoInit.md).
 
 > Para rodar em um Windows, substitua o ":" no segundo comando por ";"
 
-3. Para empacotar (é necessário enviar compactado ao professor) podemos usar 2 comandos, dependendo da extensão de arquivo desejada
+3. Para empacotar (é necessário enviar compactado ao professor) podemos usar 2 comandos, dependendo da extensão de arquivo desejada:
 
 - .tar.gz:
 
