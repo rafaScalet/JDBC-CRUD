@@ -50,7 +50,7 @@ public class ProductDAO {
 				product.setSku(result.getString("sku"));
 				product.setPrice(result.getFloat("price"));
 				product.setMaxDiscount(result.getFloat("max_discount"));
-				
+
 				products.add(product);
 			}
 		} catch (SQLException e) {
@@ -58,5 +58,25 @@ public class ProductDAO {
 		}
 
 		return products;
+	}
+
+	public static void Update (Product product) {
+		String sql = "UPDATE product SET description = ?, sku = ? , max_discount = ?, price = ?, quantity = ? WHERE id = ?";
+
+		try (
+			Connection conn = DatabaseConnection.getConnection();
+			PreparedStatement state = conn.prepareStatement(sql);
+		) {
+			state.setString(1, product.getDescription());
+			state.setString(2, product.getSku());
+			state.setFloat(3, product.getMaxDiscount());
+			state.setFloat(4, product.getPrice());
+			state.setInt(5, product.getQuantity());
+			state.setInt(6, product.getId());
+
+			state.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
 	}
 }
