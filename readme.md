@@ -50,6 +50,6 @@ zip -r jdbc-crud.zip . -x bin/\* -x .git/\* -x data/\* -x \*.zip
 
 para ver a explicação de cada parâmetro [clique aqui](/docs/ComandoEmpacotar.md)
 
-## Diagrama de Class 
+## Diagrama de Classe
 
 ![Diagrama de classe](/docs/uml.drawio.png)
