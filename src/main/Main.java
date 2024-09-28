@@ -2,6 +2,7 @@ package main;
 
 import java.util.Scanner;
 import menu.SaveMenu;
+import menu.UpdateMenu;
 import menu.ListMenu;
 import menu.ProductMenu;
 
@@ -25,6 +26,8 @@ public class Main {
 					in.close();
 					return;
 				case 4:
+					UpdateMenu.show();
+					break;
 				case 5:
 				default:
 					System.out.println("\nEnter a valid option");
