@@ -6,10 +6,7 @@ import dao.ProductDAO;
 import entity.Product;
 
 public class UpdateMenu {
-	public static void show () {
-	@SuppressWarnings("resource")
-	Scanner in = new Scanner(System.in);
-
+	public static void show (Scanner in) {
 	System.out.print("\nEnter the id for update: ");
 	int id = in.nextInt();
 

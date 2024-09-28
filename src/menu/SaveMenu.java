@@ -6,9 +6,9 @@ import dao.ProductDAO;
 import entity.Product;
 
 public class SaveMenu {
-	public static void show () {
-		@SuppressWarnings("resource")
-		Scanner in = new Scanner(System.in);
+	public static void show (Scanner in) {
+		// @SuppressWarnings("resource")
+		// Scanner in = new Scanner(System.in);
 
 		System.out.print("\nEnter the quantity: ");
 		int quantity = in.nextInt();
@@ -26,7 +26,7 @@ public class SaveMenu {
 		float maxDiscount = in.nextFloat();
 
 		Product product = new Product(quantity, sku, description, price, maxDiscount);
-		
+
 		ProductDAO.Create(product);
 	}
 }

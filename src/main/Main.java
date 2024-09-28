@@ -13,7 +13,7 @@ public class Main {
 
 			switch (option) {
 				case 1:
-					SaveMenu.show();
+					SaveMenu.show(in);
 					break;
 				case 2:
 					ListMenu.show();
@@ -23,10 +23,10 @@ public class Main {
 					in.close();
 					return;
 				case 4:
-					UpdateMenu.show();
+					UpdateMenu.show(in);
 					break;
 				case 5:
-					DeleteMenu.show();
+					DeleteMenu.show(in);
 					break;
 				default:
 					System.out.println("\nEnter a valid option");
