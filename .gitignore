@@ -11,6 +11,9 @@ bin/
 ### dotenv ###
 .env
 
+### Data ####
+data/
+
 ### Java ###
 # Compiled class file
 *.class
