@@ -40,12 +40,12 @@ para ver a explicação de cada parâmetro [clique aqui](/docs/ComandoInit.md).
 - .tar.gz:
 
 ```bash
-tar --exclude='bin' --exclude='.git' --exclude='data' --exclude='./**/*.tar.gz' -czf jdbc-crud.tar.gz .
+tar --exclude='bin' --exclude='.git' --exclude='data' --exclude='*.tar.gz' --exclude='*.zip' -czf jdbc-crud.tar.gz .
 ```
 
 - .zip:
 ```bash
-zip -r jdbc-crud.zip . -x bin/\* -x .git/\* -x data/\* -x \*.zip
+zip -r jdbc-crud.zip . -x bin/\* -x .git/\* -x data/\* -x \*.zip -x \*.tar.gz
 ```
 
 para ver a explicação de cada parâmetro [clique aqui](/docs/ComandoEmpacotar.md)
