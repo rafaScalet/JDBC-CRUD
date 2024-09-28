@@ -42,14 +42,14 @@ public class ProductDAO {
 			ResultSet result = state.executeQuery(sql)
 		) {
 			while(result.next()) {
-				Product product = new Product();
+				int id = result.getInt("id");
+				int quantity = result.getInt("quantity");
+				String sku = result.getString("sku");
+				String description = result.getString("description");
+				float price = result.getFloat("price");
+				float maxDiscount = result.getFloat("max_discount");
 
-				product.setId(result.getInt("id"));
-				product.setQuantity(result.getInt("quantity"));
-				product.setDescription(result.getString("description"));
-				product.setSku(result.getString("sku"));
-				product.setPrice(result.getFloat("price"));
-				product.setMaxDiscount(result.getFloat("max_discount"));
+				Product product = new Product(id, quantity, sku, description, price, maxDiscount);
 
 				products.add(product);
 			}

@@ -28,8 +28,7 @@ public class UpdateMenu {
 	System.out.print("Enter the max discount: ");
 	float maxDiscount = in.nextFloat();
 
-	Product product = new Product(quantity, sku, description, price, maxDiscount);
-	product.setId(id);
+	Product product = new Product(id, quantity, sku, description, price, maxDiscount);
 	ProductDAO.Update(product);
 	}
 }

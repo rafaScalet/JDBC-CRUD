@@ -8,7 +8,14 @@ public class Product {
 	private float price;
 	private float maxDiscount;
 
-	public Product() { }
+	public Product(int id, int quantity, String sku, String description, float price, float maxDiscount) {
+		this.id = id;
+		this.quantity = quantity;
+		this.sku = sku;
+		this.description = description;
+		this.price = price;
+		this.maxDiscount = maxDiscount;
+	}
 
 	public Product(int quantity, String sku, String description, float price, float maxDiscount) {
 		this.quantity = quantity;
@@ -22,47 +29,23 @@ public class Product {
 		return id;
 	}
 
-	public void setId(int id) {
-		this.id = id;
-	}
-
 	public int getQuantity() {
 		return quantity;
-	}
-
-	public void setQuantity(int quantity) {
-		this.quantity = quantity;
 	}
 
 	public String getSku() {
 		return sku;
 	}
 
-	public void setSku(String sku) {
-		this.sku = sku;
-	}
-
 	public String getDescription() {
 		return description;
-	}
-
-	public void setDescription(String description) {
-		this.description = description;
 	}
 
 	public float getPrice() {
 		return price;
 	}
 
-	public void setPrice(float price) {
-		this.price = price;
-	}
-
 	public float getMaxDiscount() {
 		return maxDiscount;
-	}
-
-	public void setMaxDiscount(float maxDiscount) {
-		this.maxDiscount = maxDiscount;
 	}
 }
