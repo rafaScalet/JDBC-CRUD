@@ -9,6 +9,37 @@ Este é um projeto acadêmico que fiz para testar a implementação do Connector
 - **lib**: é onde estão as bibliotecas externas
 - **.vscode**: é onde tem configurações para ajudar usuários desta IDE, como "auto build" ou "intellisense"
 
+```plaintext
+├── .vscode
+├── docs
+├── lib
+│   ├── dotenv-java-3.0.2.jar
+│   └── mysql-connector-j-9.0.0.jar
+├── src
+│   ├── config
+│   │   └── DatabaseConnection.java
+│   ├── dao
+│   │   └── ProductDAO.java
+│   ├── entity
+│   │   └── Product.java
+│   ├── main
+│   │   └── Main.java
+│   └── menu
+│       ├── DeleteMenu.java
+│       ├── ListMenu.java
+│       ├── ProductMenu.java
+│       ├── SaveMenu.java
+│       └── UpdateMenu.java
+├── compose.yml
+├── .editorconfig
+├── .gitignore
+├── init.sh
+├── manifest.mf
+├── readme.md
+├── structure.txt
+└── .tool-versions
+```
+
 ## Usagem
 1. suba o container docker usando o seguinte comando:
 
